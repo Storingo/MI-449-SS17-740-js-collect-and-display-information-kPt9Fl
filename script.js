@@ -13,14 +13,16 @@ var updateProfile = function () {
   var email = emailInput.value
   var phone = phoneInput.value
 
-  profileInput.innerHTML = '<h1>Hi, my name is ' + firstName + ' ' + lastName + '!</h1>' +
+  profileInput.innerHTML =
+    '<h1>Hi, my name is ' + firstName + ' ' + lastName + '!</h1>' +
     '<p>' + description + '</p>' +
     '<p>' + 'If you\'re interested in a date, you can email me at' +
     '<a href="mailto:' + email + '" target="_blank">' + email + '</a>' +
     ' or give a call at ' +
     '<a href="tel:' + phone + '" target="_blank">' + phone + '</a></p>'
 
-  rawProfileInput.textContent = '<h1>Hi, my name is ' + firstName + ' ' + lastName + '!</h1>' +
+  rawProfileInput.textContent =
+    '<h1>Hi, my name is ' + firstName + ' ' + lastName + '!</h1>' +
     '<p>' + description + '</p>' +
     '<p>' + 'If you\'re interested in a date, you can email me at' +
     '<a href="mailto:' + email + '" target="_blank">' + email + '</a>' +
